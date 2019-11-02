@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Min konto | Kevi Kensen</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/stylesheets/min-side.css">
+    </head>
+    <body style="margin: 0; padding: 0;">
+
+
+        <% var rootPath = '../'%>
+        <%- include(rootPath + 'header.ejs'); %>
+        <div id="generic-content">
+    <h1>Min konto</h1>
+
+        <div id="grid">
+                
+            <div id="details" class="card" onclick="window.location.href='/minside/detaljer'">
+            <h1>Detaljer</h1>
+            <p>Endre passord, brukernavn eller email</p>
+            </div>
+            <div id="orders" class="card">
+                <h1>Bestillinger</h1>
+                <p>-------------</p>
+            </div>
+                
+            <div id="engagements" class="card">
+            <h1>Samfunn</h1>
+            <p>Se dine bidrag i kommentarfeltene</p>
+            </div>
+        </div>
+
+
+
+
+</div>
+
+
+
+
+<!--
+    <% var rootPath = '../'%>
+    <%- include(rootPath + 'footer.ejs'); %>
+    -->
+    </body>
+</html>
+
