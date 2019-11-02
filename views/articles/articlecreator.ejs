@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Lag ny side | Kevi Kensen</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/stylesheets/creator.css">
+        <link rel="stylesheet" href="/stylesheets/cfg.css">
+    </head>
+    <body>
+            <% var rootPath = '../'%>
+            <%- include(rootPath + 'header.ejs'); %>
+        <h1 id="title">Legg inn en ny artikkel</h1>
+<div id="generic-content">
+        <form action="/skaper/leggTilArtikkel" method="post">
+            <input type="text" name="title" placeholder="Tittel" class="input title" required></input>
+            <textarea name="description" placeholder="En kort beskrivelse" class="input textarea" rows="10" cols="20"></textarea>
+            
+            <input type="checkbox" name="sizeXXL">XXL</input>
+            <input type="number" name="pris" placeholder="Pris" class="size price"></input>
+            
+            <input type="checkbox" name="sizeXL">XL</input>
+            <input type="number" name="pris" placeholder="Pris" class="size price"></input>
+        
+            <input type="checkbox" name="sizeL">L</input>
+            <input type="number" name="pris" placeholder="Pris" class="size price"></input>
+
+            <input type="checkbox" name="sizeM">M</input>
+            <input type="number" name="pris" placeholder="Pris" class="size price"></input>
+
+            <input type="checkbox" name="sizeS">S</input>
+            <input type="number" name="pris" placeholder="Pris" class="size price"></input>
+
+            <input type="checkbox" name="sizeXS">XS</input>
+            <input type="number" name="pris" placeholder="Pris" class="size price"></input>
+
+            <input type="checkbox" name="sizeXXS">XXS</input>
+            <input type="number" name="pris" placeholder="Pris" class="size price"></input>
+
+            <input type="file" name="imgFiles" class="input title" enctype="multipart/form-data" required></input>
+
+            <input type="submit" class="button stdStyle"></input>
+            </form>
+
+            <p id="info">Det nye innlegget vil først bli forhåndsvist. Du vil bli bedt om å bekrefte offentligjøringen av artikkelen på neste side.</p>
+
+            </div>
+        <script src="" async defer></script>
+    </body>
+</html>
